@@ -1,3 +1,12 @@
+@import '../tools/breakpoint-mixin';
+
+.container {
+  width: 100%;
+  max-width: calc( 75.5rem + 2rem); // Container size + desktop padding size
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
 .row {
     display: -webkit-flex;
     display: -ms-flexbox;
