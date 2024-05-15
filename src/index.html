@@ -55,13 +55,37 @@
 </head>
 
 <body>
-  <h1>Hi, FROM HTML STARTER KIT</h1>
-  <!-- build:js scripts/vendor.min.js -->
-  <!-- endbuild -->
+<!-- Background Container -->
+<div class="bg bg--main"></div>
 
-  <!-- build:js scripts/main.min.js -->
-  <script src="scripts/main.js"></script>
-  <!-- endbuild -->
+<!-- Header -->
+<div class="container">
+  <header class="header">
+    <nav class="nav">
+      <a href="#" class="nav__logo">
+        <img src="./images/logo.svg" alt="Mercadito" class="nav__logo-img">
+      </a>
+      <button class="nav__toggle">
+        <span class="nav__toggle-line"></span>
+        <span class="nav__toggle-line"></span>
+        <span class="nav__toggle-line"></span>
+      </button>
+      <ul class="nav__list">
+        <li class="nav__item active"><a href="#why-us" class="nav__link">Why Us</a></li>
+        <li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
+        <li class="nav__item"><a href="#popular-dishes" class="nav__link">Popular Dishes</a></li>
+        <li class="nav__item"><a href="#book" class="nav__link">Book</a></li>
+        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+<!-- build:js scripts/vendor.min.js -->
+<!-- endbuild -->
+
+<!-- build:js scripts/main.min.js -->
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
 
 </body>
 
