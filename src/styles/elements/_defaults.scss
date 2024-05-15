@@ -1,7 +1,6 @@
 *, *::before, *::after {
   box-sizing: border-box;
 }
-
 body,
 html {
   font-family: $body-font;
@@ -11,15 +10,22 @@ html {
 }
 
 body {
-  color: $black-900;
-  background: $white-900;
+  color: $white-900;
+  background: $black-900;
   font-size: $global-font-size;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $heading-font;
+  margin: 0;
 }
-
+h1 {
+  font-size: $h1-font-size;
+  font-weight: bold;
+}
+h4 {
+  font-weight: normal;
+}
 a {
   text-decoration: none;
   color: inherit;

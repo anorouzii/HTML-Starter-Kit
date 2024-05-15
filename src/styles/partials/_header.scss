@@ -12,7 +12,15 @@
   height: 100%;
   max-height: 59.75rem;
   z-index: -1;
-
+  @include breakpoint(992px, 'max') {
+    height: 64rem;
+    max-height: unset;
+    background-image: url('../images/hero-bg-small.png');
+  }
+  @include breakpoint(576px, 'max') {
+    height: 100%;
+    max-height: 41.688rem;
+  }
   &--main {
 
   }
@@ -45,7 +53,7 @@
   }
   @include breakpoint(992px, 'max') {
     flex-direction: column;
-    row-gap: 2.563rem;
+    row-gap: 2.5rem;
   }
   @include breakpoint(576px, 'max') {
     flex-direction: row;
@@ -137,13 +145,13 @@
 }
 
 .nav__link {
-  color: $white-900;
   text-transform: uppercase;
   font-size: 1.188rem;
+  line-height: 1.948rem;
   @include breakpoint(992px, 'max') {
     font-size: 1.25rem;
   }
-  @include breakpoint(630px, 'max') {
+  @include breakpoint(650px, 'max') {
     font-size: 1rem;
   }
   @include breakpoint(576px, 'max') {
