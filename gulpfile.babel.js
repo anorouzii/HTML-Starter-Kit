@@ -105,6 +105,7 @@ function styles() {
     // .pipe(sass().on('error', sass.logError))
     .pipe($.autoprefixer(AUTOPREFIXER_BROWSERS))
     .pipe($.size({ title: 'styles' }))
+    .pipe(dest('dist/styles'))
     .pipe(dest('.tmp/styles'));
 }
 
@@ -118,6 +119,7 @@ function scripts() {
       // Note: Since we are not using useref in the scripts build pipeline,
       //       you need to explicitly list your scripts here in the right order
       //       to be correctly concatenated
+      './src/scripts/flickity.pkgd.js',
       './src/scripts/main.js'
       // Other scripts
     ])

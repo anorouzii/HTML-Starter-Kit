@@ -3,14 +3,14 @@
 
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXX-X"></script>
+  <!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXX-X"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'UA-XXXXXX-X');
-  </script>
+  </script>-->
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,11 +46,6 @@
   <!-- Color the status bar on mobile devices -->
   <meta name="theme-color" content="#ffffff">
 
-  <!-- Flickity Carousel -->
-  <link rel="stylesheet" href="styles/utilities/flickity.min.css" media="screen">
-
-  <!-- Animate On Scroll  -->
-  <link href="styles/utilities/aos.css" rel="stylesheet">
 
   <!-- build:css styles/vendor.min.css -->
   <!-- endbuild -->
@@ -69,19 +64,19 @@
   <header class="header">
     <nav class="nav">
       <a href="#" class="nav__logo">
-        <img data-aos="fade-up" data-aos-duration="600" src="./images/logo.svg" alt="Mercadito" class="nav__logo-img">
+        <img src="./images/logo.svg" alt="Mercadito" class="nav__logo-img">
       </a>
-      <button class="nav__toggle" data-aos="fade-down" data-aos-duration="600" data-aos-delay="200">
+      <button class="nav__toggle">
         <span class="nav__toggle-line"></span>
         <span class="nav__toggle-line"></span>
         <span class="nav__toggle-line"></span>
       </button>
       <ul class="nav__list">
-        <li class="nav__item" data-aos="fade-down" data-aos-duration="600" data-aos-delay="100"><a href="#why-us" class="nav__link">Why Us</a></li>
-        <li class="nav__item" data-aos="fade-down" data-aos-duration="600" data-aos-delay="150"><a href="#menu" class="nav__link">Menu</a></li>
-        <li class="nav__item" data-aos="fade-down" data-aos-duration="600" data-aos-delay="200"><a href="#popular-dishes" class="nav__link">Popular Dishes</a></li>
-        <li class="nav__item" data-aos="fade-down" data-aos-duration="600" data-aos-delay="250"><a href="#book" class="nav__link">Book</a></li>
-        <li class="nav__item" data-aos="fade-down" data-aos-duration="600" data-aos-delay="300"><a href="#contact" class="nav__link">Contact</a></li>
+        <li class="nav__item"><a href="#why-us" class="nav__link">Why Us</a></li>
+        <li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
+        <li class="nav__item"><a href="#popular-dishes" class="nav__link">Popular Dishes</a></li>
+        <li class="nav__item"><a href="#book" class="nav__link">Book</a></li>
+        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -89,14 +84,14 @@
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero__content">
-        <h1 class="hero__title" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">Book a table in the best Mexican restaurant</h1>
-        <p class="hero__description" data-aos="fade-up" data-aos-duration="600" data-aos-delay="350">30% off for Christmas</p>
+        <h1 class="hero__title">Book a table in the best Mexican restaurant</h1>
+        <p class="hero__description">30% off for Christmas</p>
         <div class="hero__buttons">
-          <a href="#book" class="btn btn-primary" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">Book Now</a>
-          <a href="#menu" class="btn btn-secondary hero__button--menu" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">See Menu</a>
+          <a href="#book" class="btn btn-primary">Book Now</a>
+          <a href="#menu" class="btn btn-secondary hero__button--menu">See Menu</a>
         </div>
       </div>
-      <a href="#why-us" class="hero__arrow-down" data-aos="fade-down" data-aos-duration="600" data-aos-delay="450">
+      <a href="#why-us" class="hero__arrow-down">
         <img src="./images/icon/arrow-down.svg" alt="Go down">
       </a>
     </section>
@@ -104,13 +99,13 @@
     <section id="why-us" class="why-us">
       <div class="section-container why-us__container">
         <div class="why-us__content">
-          <h4 class="section-title why-us__title" data-aos="fade-up" data-aos-duration="600">Why Customers Like Us?</h4>
-          <p class="why-us__description" data-aos="fade-up" data-aos-duration="650">When we first opened our restaurant, it didn't take a long time for us to prove our difference.</p>
-          <p class="why-us__description" data-aos="fade-up" data-aos-duration="700">Our native chefs, the Chinese atmosphere of the restaurant, the variety of dishes, the high quality of food, and affordable prices made us well-known very soon.</p>
-          <p class="why-us__description" data-aos="fade-up" data-aos-duration="750">Today, we have customers not only from this area but also from other cities.</p>
+          <h4 class="section-title why-us__title">Why Customers Like Us?</h4>
+          <p class="why-us__description">When we first opened our restaurant, it didn't take a long time for us to prove our difference.</p>
+          <p class="why-us__description">Our native chefs, the Chinese atmosphere of the restaurant, the variety of dishes, the high quality of food, and affordable prices made us well-known very soon.</p>
+          <p class="why-us__description">Today, we have customers not only from this area but also from other cities.</p>
         </div>
         <figure class="why-us__media">
-          <img src="./images/why-us.jpeg" alt="Why Customers Like Us?" class="why-us__media-img" data-aos="fade-up" data-aos-duration="700">
+          <img src="./images/why-us.jpeg" alt="Why Customers Like Us?" class="why-us__media-img">
         </figure>
       </div>
     </section>
@@ -118,15 +113,15 @@
     <section id="menu" class="menu">
       <div class="section-container menu__container">
         <div class="menu__head">
-          <h4 class="section-title menu__title" data-aos="fade-up" data-aos-duration="600">Our Menu</h4>
+          <h4 class="section-title menu__title">Our Menu</h4>
           <ul class="menu__tabs">
-            <li class="menu__tab active" data-tab="starter" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">Starter</li>
-            <li class="menu__tab" data-tab="main-dishes" data-aos="fade-up" data-aos-duration="600" data-aos-delay="150">Main Dishes</li>
-            <li class="menu__tab" data-tab="desserts" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">Desserts</li>
+            <li class="menu__tab active" data-tab="starter">Starter</li>
+            <li class="menu__tab" data-tab="main-dishes">Main Dishes</li>
+            <li class="menu__tab" data-tab="desserts">Desserts</li>
           </ul>
         </div>
         <div id="starter" class="menu__content active">
-          <div class="menu__list" data-aos="fade-up" data-aos-duration="600">
+          <div class="menu__list">
             <div class="menu__item">
               <div class="menu__item-details">
                 <h5 class="menu__item-title">Dim Sums</h5>
@@ -262,8 +257,8 @@
     <section id="popular-dishes" class="popular-dishes">
       <div class="section-container popular-dishes__container">
         <div class="popular-dishes__head">
-          <h4 class="section-title popular-dishes__title" data-aos="fade-up" data-aos-duration="600">The Most Popular Dishes</h4>
-          <div class="popular-dishes__navigation" data-aos="fade-up" data-aos-duration="600">
+          <h4 class="section-title popular-dishes__title">The Most Popular Dishes</h4>
+          <div class="popular-dishes__navigation">
             <button disabled class="popular-dishes__navigation-prev" aria-label="Previous slide">
               <img src="./images/icon/arrow-left.svg" alt="Prev">
             </button>
@@ -275,14 +270,14 @@
         </div>
         <div class="popular-dishes__carousel">
           <div class="carousel-cell popular-dishes__item">
-            <figure class="popular-dishes__item-media" data-aos="fade-up" data-aos-duration="600">
+            <figure class="popular-dishes__item-media">
               <img data-flickity-lazyload="./images/popular-dishes-sweet-sour-pork.jpg" alt="Sweet and sour pork" class="popular-dishes__item-image">
             </figure>
             <div class="popular-dishes__item-details">
-              <h5 class="popular-dishes__item-title" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">Sweet and sour pork</h5>
-              <p class="popular-dishes__item-description" data-aos="fade-up" data-aos-duration="600" data-aos-delay="150">Sweet and Sour Pork Tenderloin is one of the classic cuisines in China. Pork tenderloin is the main material of this dish.</p>
-              <p class="popular-dishes__item-description" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">The dish tastes sour and sweet, but also crispy outside and soft inside, which can stimulate people’s appetite. </p>
-              <span class="popular-dishes__item-price" data-aos="fade-up" data-aos-duration="600" data-aos-delay="250">$30</span>
+              <h5 class="popular-dishes__item-title">Sweet and sour pork</h5>
+              <p class="popular-dishes__item-description">Sweet and Sour Pork Tenderloin is one of the classic cuisines in China. Pork tenderloin is the main material of this dish.</p>
+              <p class="popular-dishes__item-description">The dish tastes sour and sweet, but also crispy outside and soft inside, which can stimulate people’s appetite. </p>
+              <span class="popular-dishes__item-price">$30</span>
             </div>
           </div>
           <div class="carousel-cell popular-dishes__item">
@@ -313,15 +308,10 @@
   </main>
   <!-- Footer -->
   <footer class="footer">
-    <p class="copyright" data-aos="fade-up" data-aos-duration="600">All rights are reserved for Mercadito Restaurant © <span class="copyright__year"></span></p>
+    <p class="copyright">All rights are reserved for Mercadito Restaurant © <span class="copyright__year"></span></p>
   </footer>
 </div>
 
-
-<!-- Flickity Carousel -->
-<script src="scripts/flickity.pkgd.min.js"></script>
-<!-- Animate On Scroll  -->
-<script src="scripts/aos.js"></script>
 
 <!-- build:js scripts/vendor.min.js -->
 <!-- endbuild -->
