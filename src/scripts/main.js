@@ -69,5 +69,8 @@
       }
     });
 
+    // Copyright text
+    const currentYear = new Date().getFullYear();
+    document.querySelector('.copyright__year').innerText = currentYear;
   });
 })();
