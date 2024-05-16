@@ -26,18 +26,18 @@
 
 /* Header */
 .header {
-  padding-top: 3.75rem;
+  margin-top: 3.75rem;
   @include breakpoint(1280px, 'max') {
-    padding-top: 3rem;
+    margin-top: 3rem;
   }
   @include breakpoint(1024px, 'max') {
-    padding-top: 2rem;
+    margin-top: 2rem;
   }
   @include breakpoint(992px, 'max') {
-    padding-top: 4rem;
+    margin-top: 4rem;
   }
   @include breakpoint(576px, 'max') {
-    padding-top: 1.5rem;
+    margin-top: 1.5rem;
   }
 }
 
@@ -86,6 +86,7 @@
     flex-direction: column;
     align-items: flex-start;
     row-gap: 2.5rem;
+    z-index: 10;
     background: linear-gradient(90deg, $black-900 0%, rgba(0, 0, 0, 0.85) 100%);
     width: 100%;
     height: 100%;
@@ -158,6 +159,23 @@
   }
 }
 
+/* Sticky Menu*/
+.sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.80);
+  backdrop-filter: blur(10px);
+  margin: 0 -2rem;
+  padding: .5rem 2rem;
+  .nav {
+    align-items: center;
+    &__list {
+      padding-bottom: unset;
+    }
+  }
+}
 /* Hamburger Menu */
 .nav__toggle {
   display: none;
@@ -165,6 +183,7 @@
   border: none;
   cursor: pointer;
   padding: .5rem;
+  z-index: 11;
   @include breakpoint(576px, 'max') {
     display: inline-block;
   }
@@ -187,7 +206,6 @@
   }
 
   &.active {
-    z-index: 2;
 
     .nav__toggle-line {
       &:nth-child(1) {
