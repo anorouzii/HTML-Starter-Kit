@@ -116,5 +116,9 @@
     // Copyright text
     const currentYear = new Date().getFullYear();
     document.querySelector('.copyright__year').innerText = currentYear;
+
+    // Init AOS
+    AOS.init({ once: true });
+
   });
 })();
