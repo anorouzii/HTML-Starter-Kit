@@ -3,13 +3,19 @@
 .hero {
   width: 100%;
   max-width: 36.5rem;
-  margin: 12.5rem auto 0;
+  margin: 12.5rem auto 17.77rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   @include breakpoint(992px, 'max') {
-    margin: 6.875rem auto 0;
+    margin: 6.875rem auto 9.625rem;
+  }
+  @include breakpoint(640px, 'max') {
+    margin: 6.875rem auto 5.625rem;
+  }
+  @include breakpoint(576px, 'max') {
+    height: 22.5rem;
   }
 
   &__title {
