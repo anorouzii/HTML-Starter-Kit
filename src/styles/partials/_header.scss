@@ -76,6 +76,9 @@
   column-gap: 2.5rem;
   align-items: center;
   padding-bottom: 0.938rem;
+  @include breakpoint(650px, 'max') {
+    column-gap: 2rem;
+  }
   @include breakpoint(576px, 'max') {
     position: fixed;
     top: -100%;
@@ -146,11 +149,9 @@
   text-transform: uppercase;
   font-size: 1.188rem;
   line-height: 1.948rem;
+  white-space: nowrap;
   @include breakpoint(992px, 'max') {
     font-size: 1.25rem;
-  }
-  @include breakpoint(650px, 'max') {
-    font-size: 1rem;
   }
   @include breakpoint(576px, 'max') {
     font-size: 1.375rem;

@@ -42,7 +42,13 @@
     &:not(:first-of-type) {
       margin-top: 1.5rem;
     }
+    @include breakpoint(992px, 'max') {
+      font-size: 1.5rem;
+      line-height: 1.95rem;
+    }
     @include breakpoint(576px, 'max') {
+      font-size: 1.375rem;
+      line-height: 1.788rem;
       text-align: center;
     }
   }
