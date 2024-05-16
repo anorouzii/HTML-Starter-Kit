@@ -2,7 +2,7 @@
 
 /* Background */
 .bg {
-  background-image: url('../images/hero-bg.png');
+  background-image: url('../images/hero-bg.jpg');
   background-size: cover;
   background-position: center;
   position: absolute;
@@ -14,7 +14,7 @@
   @include breakpoint(992px, 'max') {
     height: 64rem;
     max-height: unset;
-    background-image: url('../images/hero-bg-small.png');
+    background-image: url('../images/hero-bg-small.jpg');
   }
   @include breakpoint(576px, 'max') {
     height: 41.688rem;
