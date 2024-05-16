@@ -27,5 +27,47 @@
       });
     });
 
+    // Popular Dished Carousel
+    const elem = document.querySelector('.popular-dishes__carousel');
+    const flkty = new Flickity(elem, {
+      fullscreen: true,
+      prevNextButtons: false,
+      pageDots: false,
+      lazyLoad: true
+    });
+
+    // Navigation buttons
+    const prevButton = document.querySelector('.popular-dishes__navigation-prev');
+    const nextButton = document.querySelector('.popular-dishes__navigation-next');
+
+    prevButton.addEventListener('click', () => {
+      flkty.previous();
+    });
+
+    nextButton.addEventListener('click', () => {
+      flkty.next();
+    });
+
+    // Slide counter
+
+    const sliderCounter = document.querySelector('.popular-dishes__navigation-counter');
+    const totalSlides = flkty.slides.length;
+    sliderCounter.innerHTML = `<span>1</span> / ${totalSlides}`;
+
+    flkty.on('change', (index) => {
+      sliderCounter.innerHTML = `<span>${index + 1}</span> / ${totalSlides}`;
+      // Disable navigation buttons on first and last slide
+      if (index === 0) {
+        prevButton.disabled = true;
+      } else {
+        prevButton.disabled = false;
+      }
+      if (index === totalSlides - 1) {
+        nextButton.disabled = true;
+      } else {
+        nextButton.disabled = false;
+      }
+    });
+
   });
 })();
